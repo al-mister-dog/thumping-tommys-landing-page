@@ -1,7 +1,4 @@
 //TODO
-//add a shows page
-//make it similar to music page
-//array of shows based on current date
 
 <template>
   <div id="app">
