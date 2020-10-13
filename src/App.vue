@@ -1,4 +1,5 @@
 //TODO
+// compile site for production
 
 <template>
   <div id="app">
