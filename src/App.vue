@@ -4,13 +4,6 @@
 <template>
   <div id="app">
     <transition>
-      <the-header
-        @open-music="openMusicPage"
-        @open-shows="openShowsPage"
-        v-if="musicPageVisible === false && showsPageVisible === false"
-      ></the-header>
-    </transition>
-    <transition>
       <music-page
         @close-music="closeMusicPage"
         v-if="musicPageVisible === true"
@@ -23,7 +16,15 @@
       </shows-page>
     </transition>
     <div v-if="musicPageVisible === false && showsPageVisible === false">
-      <main-image> </main-image>
+      <main-image> 
+            <transition>
+      <the-header
+        @open-music="openMusicPage"
+        @open-shows="openShowsPage"
+        v-if="musicPageVisible === false && showsPageVisible === false"
+      ></the-header>
+    </transition>
+      </main-image>
       <fest-info></fest-info>
       <fest-image></fest-image>
       <the-videos></the-videos>
@@ -127,5 +128,11 @@ body {
 }
 .v-leave-to {
   opacity: 0;
+}
+
+@media screen and (max-width: 414px) {
+  html,body{
+    overflow-x: hidden;
+}
 }
 </style>

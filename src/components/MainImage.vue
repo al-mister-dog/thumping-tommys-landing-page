@@ -19,4 +19,15 @@ main {
   background-repeat: no-repeat;
   background-position: center;
 }
+@media screen and (max-width: 415px) {
+  .container {
+    width: 100vw;
+    background-size: 180%;
+    background-position: 40% 0%;
+  }
+  .main {
+    width: 100px;
+    
+  }
+}
 </style>

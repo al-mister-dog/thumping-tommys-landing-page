@@ -38,6 +38,14 @@ img {
   padding: 5rem 0;
   max-width: 500px;
 }
+
+@media screen and (max-width: 415px) {
+  .video-frame {
+  width: 100vw;
+  height: 50vh;
+  margin-top: 5px;
+}
+}
 </style>
 
 
