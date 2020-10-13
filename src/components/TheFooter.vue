@@ -7,7 +7,7 @@
   <div class="wrapper" id="contactId">
     <h2>Contact</h2>
     <p>{{ p1 }}</p>
-    <p>{{ p2 }}</p>
+    <p>Please send gig and event queries to <a href="mailto:thethumpingtommys@gmail.com">thethumpingtommys@gmail.com</a></p>
     <ul>
       <li class="social">
         <a href="https://twitter.com/thumpingtommys"
@@ -45,7 +45,6 @@ export default {
     return {
       p1:
         "We play all sorts of events from pubs, clubs and festivals to weddings and business events.",
-      p2: "Please send gig and event queries to thethumpingtommys@gmail.com",
     };
   },
 };
